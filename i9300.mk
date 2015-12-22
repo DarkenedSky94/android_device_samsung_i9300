@@ -88,6 +88,12 @@ PRODUCT_PACKAGES += \
 
 $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 
+# OTA
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.ota.romname=Temasek-i9300-ds94 \
+    ro.ota.version=$(shell date +%F | sed s@-@@g) \
+    ro.ota.manifest=https://www.dropbox.com/s/u19l0gehbv9kn52/i9300_ota.xml?dl=1
+
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.ril_class=SamsungExynos4RIL \
