@@ -64,6 +64,11 @@ PRODUCT_PACKAGES += \
     Nfc \
     Tag
 
+# Kryten2k35 OTAUpdates
+ PRODUCT_PACKAGES += \
+     OTAUpdates
+ 
+
 # Camera
 PRODUCT_PACKAGES += \
     camera.smdk4x12 \
