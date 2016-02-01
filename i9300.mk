@@ -68,6 +68,9 @@ PRODUCT_PACKAGES += \
  PRODUCT_PACKAGES += \
      OTAUpdates
  
+# Low-RAM optimizations
+ADDITIONAL_BUILD_PROPERTIES += \
+	config.disable_atlas=true
 
 # Camera
 PRODUCT_PACKAGES += \
