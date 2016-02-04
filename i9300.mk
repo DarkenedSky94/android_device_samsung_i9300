@@ -67,6 +67,10 @@ PRODUCT_PACKAGES += \
 # Kryten2k35 OTAUpdates
  PRODUCT_PACKAGES += \
      OTAUpdates
+
+# Kernel control script
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/94kernel:system/etc/init.d/94kernel
  
 # Low-RAM optimizations
 ADDITIONAL_BUILD_PROPERTIES += \
