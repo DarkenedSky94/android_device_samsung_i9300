@@ -71,10 +71,6 @@ PRODUCT_PACKAGES += \
 # Kryten2k35 OTAUpdates
  PRODUCT_PACKAGES += \
      OTAUpdates
-     
-# Gello Browser
- PRODUCT_PACKAGES += \
-     Gello
 
 # Kernel control script
 PRODUCT_COPY_FILES += \
